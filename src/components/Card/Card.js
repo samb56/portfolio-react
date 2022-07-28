@@ -5,20 +5,22 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import Projects from '../Projects';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import WebIcon from '@mui/icons-material/Web';
 
-export default function ImgMediaCard(github, image, deployed, title) {
+const ImgMediaCard = (project) => {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
         alt="green iguana"
         height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
+        image={project.image}
       />
-      <CardContent title={title}>
-        <Typography  gutterBottom variant="h5" component="div">
-          
+
+      <CardContent >
+        <Typography gutterBottom variant="h5" component="div">
+          {project.title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Lizards are a widespread group of squamate reptiles, with over 6,000
@@ -26,10 +28,16 @@ export default function ImgMediaCard(github, image, deployed, title) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+        <Button size="small" href={project.github}>
+          <GitHubIcon fontSize='small' /> Github
+        </Button>
+        <Button size="small" href={project.deployed}>
+          <WebIcon fontSize='small' /> Heroku
+        </Button>
       </CardActions>
     </Card>
   );
 }
+
+export default ImgMediaCard
 
