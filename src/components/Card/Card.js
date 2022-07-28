@@ -5,6 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import Projects from '../Projects';
 
 export default function ImgMediaCard(github, image, deployed, title) {
   return (
@@ -15,9 +16,9 @@ export default function ImgMediaCard(github, image, deployed, title) {
         height="140"
         image="/static/images/cards/contemplative-reptile.jpg"
       />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
+      <CardContent title={title}>
+        <Typography  gutterBottom variant="h5" component="div">
+          
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Lizards are a widespread group of squamate reptiles, with over 6,000
