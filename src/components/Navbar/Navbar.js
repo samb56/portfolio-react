@@ -13,6 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from 'react-router-dom'
+import Resume from '../../assets/other/resume.pdf'
 
 // const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -102,7 +103,7 @@ const ResponsiveAppBar = () => {
                 <Typography textAlign="center"><Link to='/Contact'>Contact</Link></Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
-                <Typography textAlign="center"><Link to='/Resume'>Resume</Link></Typography>
+                <Typography textAlign="center"><a href={Resume} target="_blank">Resume</a></Typography>
               </MenuItem>
 
             </Menu>
@@ -155,7 +156,7 @@ const ResponsiveAppBar = () => {
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: 'white', display: 'block' }}
             >
-              <Link to='/Resume'>Resume</Link>
+              <a href={Resume} target="_blank">Resume</a>
             </Button>
 
           </Box>

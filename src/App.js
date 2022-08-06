@@ -6,6 +6,8 @@ import Contact from './components/Contact'
 import Resume from './components/Resume'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Login from './components/Login'
+import Footer from './components/Footer';
+
 function App() {
 
   return (
@@ -19,6 +21,7 @@ function App() {
           <Route path='/Resume' element={<Resume />} />
           <Route path='/Login' element={<Login/>} />
         </Routes>
+        <Footer />
         <CssBaseline />
       </Router>
     </>
