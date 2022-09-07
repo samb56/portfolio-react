@@ -44,7 +44,7 @@ function Contact() {
   }
 
   const handleEmailBlur = () => {
-    if (validateEmail(formState.email === true)) {
+    if (validateEmail(formState.email) === true) {
       console.log("its valid")
     } else {
       setFormState({ ...formState, invalidEmail: true, nameNeeded: false, messageNeeded: false })
