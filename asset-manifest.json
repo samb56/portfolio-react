@@ -1,15 +1,19 @@
 {
   "files": {
     "main.css": "/portfolio-react/static/css/main.ef7c471c.css",
-    "main.js": "/portfolio-react/static/js/main.71f11f07.js",
+    "main.js": "/portfolio-react/static/js/main.bf1fe097.js",
+    "static/media/surfdeck.gif": "/portfolio-react/static/media/surfdeck.2cb1891bb8ac5afa542c.gif",
     "static/media/photo.JPG": "/portfolio-react/static/media/photo.18eda806a48ab1fd48db.JPG",
+    "static/media/Capture.JPG": "/portfolio-react/static/media/Capture.046f05e60d391cd6eeab.JPG",
+    "static/media/cryptoproject.png": "/portfolio-react/static/media/cryptoproject.6ed3d2e0154b755a7791.png",
+    "static/media/social-network-api.JPG": "/portfolio-react/static/media/social-network-api.6407966e3dfb9717a49f.JPG",
     "static/media/resume.pdf": "/portfolio-react/static/media/resume.ba7f6973d0f60c5442fc.pdf",
     "index.html": "/portfolio-react/index.html",
     "main.ef7c471c.css.map": "/portfolio-react/static/css/main.ef7c471c.css.map",
-    "main.71f11f07.js.map": "/portfolio-react/static/js/main.71f11f07.js.map"
+    "main.bf1fe097.js.map": "/portfolio-react/static/js/main.bf1fe097.js.map"
   },
   "entrypoints": [
     "static/css/main.ef7c471c.css",
-    "static/js/main.71f11f07.js"
+    "static/js/main.bf1fe097.js"
   ]
 }
